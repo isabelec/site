@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, footer {
+    background: #000 none no-repeat scroll 0 0;
+    color: black;
+    font-size: 130%;
+    color: white;
+    text-align: center;
+}
+header {
+    background-color: black;
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;  
+    padding: 24px;
+    display: block;
+    margin: auto;
+    vertical-align: baseline;
+}
+.container{
+    font-family: 'Cabin Sketch', sans-serif;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 620px;
+    padding-top: 150px;
+    
+}
+
+.logo {
+    margin-top: -5px;
+    box-sizing: border-box;
+    left: 20%;
+    position: absolute;
+    display: inline-block;
+    padding-top: 0;
+}
+.vaga {
+    font-family: 'Kosugi Maru', sans-serif;
+    padding: 12px;
+    margin: 0;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 224px;
+    height: 47px;
+    top: 20px;
+    right: 20%;
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    color: white; 
+    text-decoration: none;
+    padding: auto;
+    display: inline-block;
+    opacity: 1.0;
+}
+.vaga:hover,
+.vaga:focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+    transition-delay: 0s, 1s;
+    transform: scale(1.1);
+}
+#intro {
+    background-image: url(imagens/one.png);
+}
+.iframe {
+    max-width: 90%;
+	margin: 0 auto;
+}
+#motivos {
+    background-image: url(imagens/motivos.jpg);
+}
+#depoimentos {
+    background-image: url(imagens/depoimentos.png);
+}
+#informacoes-vaga {
+    background-image: url(imagens/infos.jpg);
+}
+#beneficios{
+    background-image: url(imagens/beneficios.jpg);
+}
+#rodape {
+    background-image: url(imagens/final.jpg);
+    background-size: cover;
+}
+.vaga-final {
+    
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.texto1 {
+    font-size: 15px;
+}
+.negrito-cor {
+    font-weight: bold;
+    color: #4169E1;
+}
+.negrito {
+    font-weight: bold;
+}
+.color{
+    color: #4169E1;
+}
+#motivos ul {
+    display: flex;
+}
+#motivos li{
+    flex: auto;
+    font-size: 15px;
+    text-transform: none;
+    font-family: "Arial", sans-serif;
+    text-align: justify;
+    padding-left: 15%;
+    padding-top: 5%;
+}

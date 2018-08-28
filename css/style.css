@@ -36,20 +36,20 @@ header {
     height: 580px;
 }
 .segundo-container{
-    padding-top: 50px;
+    padding-top: 0px;
     height: 1020px;
 }
 .terceiro-container{
-    padding-top: 100px;
+    padding-top: 80px;
     height: 620px;
 }
 .quarto-container{
-    padding-top: 100px;
-    height: 700px;
+    padding-top: 80px;
+    height: 720px;
 }
 .quinto-container{
-    padding-top: 100px;
-    height: 650px;
+    padding-top: 80px;
+    height: 700px;
 }
 footer{
     height: 100px;
@@ -105,6 +105,9 @@ footer{
 }
 #beneficios{
     background-image: url(imagens/beneficios.jpg);
+}
+#endereco{
+    
 }
 h1 {
     font-size: 40px;
@@ -213,11 +216,13 @@ h2 {
 }
 footer {
     font-size: 18px;
+    font-weight: bold;
     text-align: center;
     padding-bottom: 5px;
     font-family: "Josefin Sans", sans-serif;
+    background-color: #104E8B;
+    opacity: 0.8;;
 }
-<<<<<<< HEAD
 .vaga-final:hover,
 .vaga-final:focus {
     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
@@ -262,15 +267,13 @@ cite{
     text-transform: uppercase;
     font-weight: bold;
 }
-=======
 footer p:first-child{
     padding-top: 20px;
 }
 footer p:last-child{
     padding-bottom: 15px;
 }
-.ultima{
+#ultima { 
     margin-top: -40px;
 }
 
->>>>>>> fd3a841a8139f77117f7a2714e8bb4faf386fe30

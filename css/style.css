@@ -48,7 +48,8 @@ header {
     height: 620px;
 }
 .quinto-container{
-    height: 620px;
+    padding-top: 100px;
+    height: 650px;
 }
 .sexto-container{
     height: 620px;
@@ -221,4 +222,42 @@ h2 {
     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
     transition-delay: 0s, 1s;
     transform: scale(1.1);
+}
+#beneficios ul {
+    display: flex;
+}
+#beneficios li{
+    font-size: 18px;
+    text-transform: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+#beneficios li{
+    padding-left: 15%;
+}
+#beneficios p{
+    width: 200px;
+    line-height: 1.1;
+}
+   
+.foto {
+    border-radius: 100px;
+}
+blockquote{
+    font-size: 18px;
+    text-transform: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 10px;
+    line-height: 1.1;
+}
+cite{
+    text-transform: uppercase;
+    font-weight: bold;
 }

@@ -45,13 +45,13 @@ header {
 }
 .quarto-container{
     padding-top: 100px;
-    height: 620px;
+    height: 700px;
 }
 .quinto-container{
     height: 620px;
 }
-.sexto-container{
-    height: 620px;
+footer{
+    height: 100px;
 }
 
 .logo {
@@ -104,10 +104,6 @@ header {
 }
 #beneficios{
     background-image: url(imagens/beneficios.jpg);
-}
-#rodape {
-    background-image: url(imagens/final.jpg);
-    background-size: cover;
 }
 h1 {
     font-size: 40px;
@@ -173,9 +169,10 @@ h2 {
 }
 #informacoes-vaga ul{
     display: flex;
+    margin-right: 10%;
 }
 .titulo-info{
-    width: 250px;
+    width: 280px;
     height: 35px;
     padding-top: 8px;
     font-size: 17px;
@@ -192,33 +189,40 @@ h2 {
     transform: rotate(-2deg);
     box-shadow: 0 0 .25em white;
 }
-#informacoes-vaga li{
+.lista-titulo{
     margin-left: 10%;
 }
-.vaga-final{
-    font-family: 'Kosugi Maru', sans-serif;
-    padding: 18px;
-    margin: 0;
-    border: 2px solid white;
-    border-radius: 15px;
+
+.tecnologias{
+    padding-top: 5px;
+    height: 100px;
+}
+.lista-tecnologias{
+    margin-left: -10%;
+    width: 100px;
+    margin-right: 15%;
+}
+.lista-titulo p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    text-transform: none;
     width: 300px;
-    height: 70px;
-    top: 20px;
-    right: 20%;
-    box-sizing: border-box;
+    text-align: left;
+    padding-bottom: 10px;
+}
+footer {
+    font-size: 18px;
     text-align: center;
-    text-transform: uppercase;
-    color: white; 
-    text-decoration: none;
-    padding: auto;
-    display: inline-block;
-    margin-top: 300px;
-    font-size: 26px;
-    display: inline-block;
+    padding-bottom: 5px;
+    font-family: "Josefin Sans", sans-serif;
 }
-.vaga-final:hover,
-.vaga-final:focus {
-    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
-    transition-delay: 0s, 1s;
-    transform: scale(1.1);
+footer p:first-child{
+    padding-top: 20px;
 }
+footer p:last-child{
+    padding-bottom: 15px;
+}
+.ultima{
+    margin-top: -40px;
+}
+

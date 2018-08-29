@@ -68,7 +68,7 @@ footer{
     font-family: 'Kosugi Maru', sans-serif;
     padding: 12px;
     margin: 0;
-    border: 2px solid #548cc3;
+    border: 2px solid black;
     border-radius: 15px;
     width: 224px;
     height: 47px;
@@ -78,14 +78,13 @@ footer{
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
-    background-color: white;
-    color: black; 
+    color: #548cc3; 
     text-decoration: none;
     display: inline-block;
+    box-shadow: 0 0 1em #FFF, inset 0 0 .5em #000;
+    transition: translate 0s, box-shadow 0s;
 }
-.vaga:hover,
-.vaga:focus {
-    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+.vaga:hover {
     transition-delay: 0s, 1s;
     transform: scale(1.1);
 }
@@ -120,7 +119,7 @@ h3{
     font-size: 15px;
     margin-top: 10px;
 }
-span {
+.span {
     font-weight: bold;
 }
 .span-azul {

@@ -21,16 +21,15 @@ header {
     display: block;
     margin: auto;
     vertical-align: baseline;
+    opacity: 0.8;
 }
 .container{
     font-family: 'Cabin Sketch', sans-serif;
     line-height: 1.1;
     text-transform: uppercase;
     margin: 0 auto;
-    width: cover;
-    background-position: top left;
-    background-repeat: no-repeat;
     text-align: center;
+    width: 100%;
 }
 .primeiro-container{
     padding-top: 150px;
@@ -46,7 +45,7 @@ header {
 }
 .quarto-container{
     padding-top: 80px;
-    height: 720px;
+    height: 780px;
 }
 .quinto-container{
     padding-top: 80px;
@@ -55,7 +54,6 @@ header {
 footer{
     height: 100px;
 }
-
 .logo {
     margin-top: -5px;
     box-sizing: border-box;
@@ -84,7 +82,8 @@ footer{
     box-shadow: 0 0 1em #FFF, inset 0 0 .5em #000;
     transition: translate 0s, box-shadow 0s;
 }
-.vaga:hover {
+.vaga:hover,
+.vaga:focus {
     transition-delay: 0s, 1s;
     transform: scale(1.1);
 }
@@ -106,6 +105,9 @@ footer{
 }
 #beneficios{
     background-image: url(imagens/beneficios.jpg);
+}
+footer{
+    background-image: url(imagens/footer.jpg);
 }
 h1 {
     font-size: 40px;
@@ -141,12 +143,10 @@ h3{
     padding-right: 0;
     padding-left: 10px;
 }
-
 #motivos li:nth-child(1),
 #motivos li:nth-child(3){
     padding-left: 15%;
 }
-
 .titulo-motivos{
     width: 250px;
     height: 35px;
@@ -173,7 +173,6 @@ h3{
 }
 #informacoes-vaga ul{
     display: flex;
-    margin-right: 10%;
 }
 .titulo-info{
     width: 280px;
@@ -196,15 +195,14 @@ h3{
 .lista-titulo{
     margin-left: 10%;
 }
-
 .tecnologias{
     padding-top: 5px;
     height: 100px;
 }
 .lista-tecnologias{
-    margin-left: -10%;
+    margin-left: -20%;
     width: 100px;
-    margin-right: 15%;
+    margin-right: 20%;
 }
 .lista-titulo p{
     font-family: "Josefin Sans", sans-serif;
@@ -220,14 +218,7 @@ footer {
     text-align: center;
     padding-bottom: 5px;
     font-family: "Josefin Sans", sans-serif;
-    background-color: #104E8B;
     opacity: 0.8;;
-}
-.vaga-final:hover,
-.vaga-final:focus {
-    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
-    transition-delay: 0s, 1s;
-    transform: scale(1.1);
 }
 #beneficios ul {
     display: flex;
@@ -241,7 +232,6 @@ footer {
     padding-right: 0;
     padding-left: 10px;
 }
-
 #beneficios li{
     padding-left: 15%;
 }
@@ -249,9 +239,10 @@ footer {
     width: 200px;
     line-height: 1.1;
 }
-   
 .foto {
     border-radius: 100px;
+    box-shadow: 0 0 1.0em #548cc3;
+    margin-bottom: 20px;
 }
 blockquote{
     font-size: 18px;
@@ -264,8 +255,11 @@ blockquote{
     line-height: 1.1;
 }
 cite{
-    text-transform: uppercase;
     font-weight: bold;
+    font-size: 18px;
+}
+blockquote p{
+    padding-bottom: 20px;
 }
 footer p:first-child{
     padding-top: 20px;
@@ -273,7 +267,6 @@ footer p:first-child{
 footer p:last-child{
     padding-bottom: 15px;
 }
-#ultima { 
-    margin-top: -40px;
+.lista-titulo:last-child{
+    padding-left: 35px;
 }
-

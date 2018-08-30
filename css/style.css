@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
 }
-body, footer {
+body {
     background: #000 none no-repeat scroll 0 0;
     color: black;
     font-size: 130%;
     color: white;
     text-align: center;
+    
 }
 header {
     background-color: black;
@@ -21,7 +22,6 @@ header {
     display: block;
     margin: auto;
     vertical-align: baseline;
-    opacity: 0.8;
 }
 .container{
     font-family: 'Cabin Sketch', sans-serif;
@@ -31,29 +31,45 @@ header {
     text-align: center;
     width: 100%;
 }
-.primeiro-container{
+main{
+    font-weight: bold;
+}
+/*Deixou de ser id e virou uma classe pois é usado em dois lugares, no primeiro container e no sexto, por isso também não dá pra colocar dentro do container */
+.intro{
+    background-image: url(imagens/one.png);
+}
+/* Deixou de id e passou a ser uma classe, por ser usada em mais de um local com diferentes medidas*/
+.motivos{
+    background-image: url(imagens/motivos.jpg);
+}
+/* Virou id pois é usado apenas em uma tag*/
+#primeiro-container{
     padding-top: 150px;
     height: 580px;
 }
-.segundo-container{
+/* Virou id pois é usado apenas em uma tag*/
+#segundo-container{
     padding-top: 50px;
     height: 1020px;
 }
-.terceiro-container{
+/* Extingui o id depoimentos, coloquei o atributo que estava nele aqui e transformei isso aqui em id (antes era classe) -- por ser usada apenas em um tag é mais indicado que seja id */
+#terceiro-container{
+    background-image: url(imagens/depoimentos.png);
     padding-top: 80px;
     height: 620px;
 }
-.quarto-container{
+/* Virou id pois é usado apenas em uma tag -- e também fiz a fusão daquele antigo id "informacoes-vaga", que tinha apenas o atributo back-image e coloquei aqui dentro*/
+#quarto-container{
+    background-image: url(imagens/infos.jpg);
     padding-top: 80px;
     height: 780px;
 }
-.quinto-container{
-    padding-top: 80px;
-    height: 700px;
+
+.sexto-container{
+    padding-top: 100px;
+    height: 200px;
 }
-footer{
-    height: 100px;
-}
+
 .logo {
     margin-top: -5px;
     box-sizing: border-box;
@@ -79,7 +95,7 @@ footer{
     color: #548cc3; 
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 0 1em #FFF, inset 0 0 .5em #000;
+    box-shadow: 0 0 1.5em white, inset 0 0 .5em #000;
     transition: translate 0s, box-shadow 0s;
 }
 .vaga:hover,
@@ -87,28 +103,12 @@ footer{
     transition-delay: 0s, 1s;
     transform: scale(1.1);
 }
-#intro {
-    background-image: url(imagens/one.png);
-}
+
 .iframe {
     max-width: 90%;
 	margin: 0 auto;
 }
-#motivos {
-    background-image: url(imagens/motivos.jpg);
-}
-#depoimentos {
-    background-image: url(imagens/depoimentos.png);
-}
-#informacoes-vaga {
-    background-image: url(imagens/infos.jpg);
-}
-#beneficios{
-    background-image: url(imagens/beneficios.jpg);
-}
-footer{
-    background-image: url(imagens/footer.jpg);
-}
+
 h1 {
     font-size: 40px;
     margin-bottom: 60px;
@@ -121,7 +121,7 @@ h3{
     font-size: 15px;
     margin-top: 10px;
 }
-.span {
+span {
     font-weight: bold;
 }
 .span-azul {
@@ -131,10 +131,10 @@ h3{
 .color{
     color: #548cc3;
 }
-#motivos ul {
+.motivos ul {
     display: flex;
 }
-#motivos li{
+.motivos li{
     font-size: 17px;
     text-transform: none;
     font-family: "Josefin Sans", sans-serif;
@@ -143,8 +143,8 @@ h3{
     padding-right: 0;
     padding-left: 10px;
 }
-#motivos li:nth-child(1),
-#motivos li:nth-child(3){
+.motivos li:nth-child(1),
+.motivos li:nth-child(3){
     padding-left: 15%;
 }
 .titulo-motivos{
@@ -167,11 +167,11 @@ h3{
     -ms-transform: rotate(-2deg);
     box-shadow: 0 0 .25em white;
 }
-#motivos p{
+.motivos p{
     width: 100%;
     line-height: 1.1;
 }
-#informacoes-vaga ul{
+#quarto-container ul{
     display: flex;
 }
 .titulo-info{
@@ -210,47 +210,15 @@ h3{
 .tecnologias{
     padding-right: 1%;
 }
-.tecnologias:hover,
-.tecnologias:focus {
-    transition-delay: 0s, 1s;
-    transform: scale(1.2);
-}
 .lista-titulo p{
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
     text-transform: none;
     width: 300px;
-    text-align: left;
+    text-align: center;
     padding-bottom: 10%;
     margin-left: -50%;
     padding-right: 5%;
-}
-footer {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 5px;
-    font-family: "Josefin Sans", sans-serif;
-    opacity: 0.8;;
-}
-#beneficios ul {
-    display: flex;
-}
-#beneficios li{
-    font-size: 18px;
-    text-transform: none;
-    font-family: "Josefin Sans", sans-serif;
-    text-align: center;
-    padding-top: 20px;
-    padding-right: 0;
-    padding-left: 10px;
-}
-#beneficios li{
-    padding-left: 15%;
-}
-#beneficios p{
-    width: 200px;
-    line-height: 1.1;
 }
 .foto {
     border-radius: 100px;
@@ -267,16 +235,97 @@ blockquote{
     line-height: 1.1;
 }
 cite{
-    font-weight: bold;
-    font-size: 18px;
+    color: #548cc3;
+    font-size: 20px;
 }
 blockquote p{
     padding-bottom: 20px;
 }
-footer p:first-child{
+/*Extingui o id beneficios, coloquei o atributo aqui dentro e transformei em id essa antiga classe, por ser usada em apenas um local*/
+#quinto-container{
+    background-image: url(imagens/beneficios.jpg);
+    padding-top: 80px;
+    height: 700px;
+}
+#quinto-container ul {
+    display: flex;
+}
+#quinto-container li{
+    font-size: 18px;
+    text-transform: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
     padding-top: 20px;
+    padding-right: 0;
+    padding-left: 15%;
 }
-footer p:last-child{
-    padding-bottom: 15px;
+#quinto-container p{
+    width: 200px;
+    line-height: 1.1;
+    font-weight: bold;
 }
-
+.vaga2 {
+    font-family: 'Kosugi Maru', sans-serif;
+    padding: 13px;
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 40%;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 300px;
+    height: 60px;
+    position: unset;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #548cc3; 
+    text-decoration: none;
+    background-color: black;
+    display: inline-block;
+    box-shadow: 0 0 1em #FFF, inset 0 0 .5em #000;
+    transition: translate 0s, box-shadow 0s;
+}
+.vaga2:hover,
+.vaga2:focus {
+    transition-delay: 0s, 1s;
+    transform: scale(1.1);
+}
+footer {
+    background-image: url(imagens/footer.jpg);
+    height: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Josefin Sans", sans-serif;
+    opacity: 0.8;
+    width: 100%;
+}
+footer ul{
+    display: flex;
+    
+}
+footer li{
+    padding-left: 22%;
+    width: 400px;
+}
+.soft{
+    margin-top: 1%;
+    margin-left:1%;
+}
+.bug{
+    margin-top: -2%;
+    text-align: center;
+}
+.underline{
+    text-decoration: none;
+}
+.space1{
+    padding-left: 25.5%;
+}
+.space2{
+    padding-left: 24.5%;
+}
+.space3{
+    padding-left: 20.5%;
+}

@@ -298,13 +298,17 @@ blockquote p{
 }
 footer {
     background-image: url(imagens/footer.jpg);
-    height: 130px;
+    height: 110px;
     font-size: 18px;
     font-weight: bold;
     text-align: left;
     font-family: "Josefin Sans", sans-serif;
     opacity: 0.8;
     width: 100%;
+}
+footer p{
+    font-size: 15px;
+    line-height: 1.3;
 }
 footer ul{
     display: flex;
@@ -319,26 +323,32 @@ footer li{
     margin-left:1%;
 }
 .bug{
-    margin-top: -2%;
+    margin-top: -3.5%;
     text-align: center;
 }
+.bug:nth-child(1){
+    margin-left: 5%;
+}
 .bug:nth-child(2){
-    margin-left: -20%;
+    margin-left: -17%;
 }
 .bug:nth-child(3){
-    margin-left: -20%;
+    margin-left: -17%;
 }
 .underline{
     text-decoration: none;
 }
 .space{
     text-align: center;
-    margin-top: 1%;
+    margin-top: -0.75%;
+}
+.space:nth-child(1){
+    margin-left: 5%;
 }
 .space:nth-child(2){
-    margin-left: -20%;
+    margin-left: -17%;
 }
 .space:nth-child(3){
-    margin-left: -20%;
+    margin-left: -17%;
 }
 

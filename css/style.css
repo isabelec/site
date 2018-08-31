@@ -139,19 +139,22 @@ span {
 .motivos ul {
     display: flex;
 }
+.motivos p{
+    width: 80%;
+    line-height: 1.1;
+}
+
 .motivos li{
     font-size: 17px;
     text-transform: none;
     font-family: "Josefin Sans", sans-serif;
-    text-align: justify;
+    text-align: center;
     padding-top: 20px;
     padding-right: 0;
     padding-left: 10px;
+    width: 100%;
 }
-.motivos li:nth-child(1),
-.motivos li:nth-child(3){
-    padding-left: 15%;
-}
+
 .titulo-motivos{
     width: 250px;
     height: 35px;
@@ -172,9 +175,8 @@ span {
     -ms-transform: rotate(-2deg);
     box-shadow: 0 0 .25em white;
 }
-.motivos p{
-    width: 100%;
-    line-height: 1.1;
+#dif{
+    width: 350px;
 }
 #quarto-container ul{
     display: flex;
@@ -198,7 +200,7 @@ span {
     box-shadow: 0 0 .25em white;
 }
 .lista-titulo:nth-child(1){
-    margin-left: 15%;
+    margin-left: 5%;
 }
 .lista-titulo:nth-child(2){
     margin-left: 5%;

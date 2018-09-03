@@ -70,7 +70,7 @@ main{
     height: 200px;
 }
 #galeria{
-    height: 700px;
+    height: 850px;
     padding-top: 80px;
     background-image: url(imagens/footer.jpg);
 }
@@ -187,6 +187,9 @@ span {
 }
 #dif{
     width: 350px;
+}
+.fotos{
+    margin:1%;
 }
 #quarto-container ul{
     display: flex;

@@ -233,7 +233,7 @@ span {
     font-size: 18px;
     text-transform: none;
     width: 250px;
-    text-align: left;
+    text-align: center;
     padding-bottom: 10%;
     margin-left: -50%;
 }
@@ -362,5 +362,9 @@ footer li{
 }
 .space:nth-child(3){
     margin-left: -17%;
+}
+#img{
+    margin-right: 50%;
+    margin-top: -3%;
 }
 
